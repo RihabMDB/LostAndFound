@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SignUp"
+android:background="#061B2D">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="clip_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:minWidth="10dp"
+            android:minHeight="10dp"
+            android:onClick="openGallery"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_account_circle" />
+
+
+        <EditText
+            android:id="@+id/firstname"
+            android:hint="First Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="#fff"
+            android:ems="15"
+            android:fontFamily="cursive"
+            android:padding="8dp"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/lastname"
+           android:hint="Last Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:ems="15"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffff"
+            android:fontFamily="cursive"/>
+        <EditText
+            android:id="@+id/mail"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:ems="15"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffff"
+            android:fontFamily="cursive"/>
+        <EditText
+            android:id="@+id/phone"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:ems="15"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffff"
+            android:fontFamily="cursive"/>
+
+
+        <EditText
+            android:id="@+id/address"
+            android:hint="Address"
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:ems="15"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffff"
+            android:fontFamily="cursive"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:ems="15"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffff"
+            android:fontFamily="cursive"/>
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:ems="15"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffff"
+            android:fontFamily="cursive"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Sign Up"
+            android:textSize="24sp"
+            android:fontFamily="cursive"
+            android:ems="15"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:background="#FF65A4"
+            android:id="@+id/signup"
+            android:onClick="Signup"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="You already have account ? "
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Sign In Now"
+                android:textColor="#FF65A4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</FrameLayout>
